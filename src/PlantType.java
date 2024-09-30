@@ -1,5 +1,5 @@
 public enum PlantType {
-    KAKTUS,
+    CACTUS,
     PALM,
-    KÖTTÄTANDE
+    CARNIVOROUS
 }
