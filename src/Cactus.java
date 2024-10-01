@@ -3,8 +3,8 @@ public class Cactus extends Plants implements PrintPlantInfo{
 
     private int mineralWaterPerDay = 2;
 
-    public Cactus(PlantType type, double height) {
-        super(type, height);
+    public Cactus(String name, PlantType type, double height) {
+        super(name, type, height);
 
     }
 

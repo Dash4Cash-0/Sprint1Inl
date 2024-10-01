@@ -4,8 +4,8 @@ public class Palms extends Plants implements PrintPlantInfo{
     private double water = 0.5;
     private double waterPerday;
 
-    public Palms(PlantType type, double height) {
-        super(type, height);
+    public Palms(String name, PlantType type, double height) {
+        super(name, type, height);
         this.waterPerday = this.water * height;
     }
 

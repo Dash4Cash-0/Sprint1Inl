@@ -5,8 +5,8 @@ public class CarnivorousPlant extends Plants implements PrintPlantInfo{
     private double dailyTotalProtein;
 
 
-    public CarnivorousPlant(PlantType type, double height){
-        super(type, height);
+    public CarnivorousPlant(String name, PlantType type, double height){
+        super(name, type, height);
         this.dailyTotalProtein = this.baseProteinIntake + (0.2 * height);
     }
 

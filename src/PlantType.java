@@ -1,6 +1,6 @@
 public enum PlantType {
     CACTUS ("Cactus"),
-    PALM ("Palm"),
+    PALM ("Palm Tree"),
     CARNIVOROUS ("Carnivorous Plant");
 
     public final String type;
