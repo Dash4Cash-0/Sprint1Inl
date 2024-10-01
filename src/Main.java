@@ -34,19 +34,24 @@ public class Main {
         while (isRunning) {
 
             String userInput;
+            String plantNotAvailable = "";
 
             System.out.println("\nChoose which plant to water: ");
             String choice = input.nextLine().toLowerCase();
 
 
             for (Plants plant : allPlants) {
-                if (choice.equals(plant.getName().toLowerCase())) {
+                if (!choice.equals(plant.getName().toLowerCase())) {
+                    plantNotAvailable = "There is no plant with the name " + choice + "\n";
+                }else{
                     plant.printLiquidInfo();
+                    plantNotAvailable = "";
                     break;
                 }
             }
+            System.out.println(plantNotAvailable);
 
-            System.out.println("\nDo you want to water another plant? y/n");
+            System.out.println("Do you want to water another plant? y/n");
             System.out.println("(Type \"in store\" to see available plants)");
             userInput = input.nextLine().toLowerCase();
 
