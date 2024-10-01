@@ -1,4 +1,4 @@
-public abstract class Plants {
+public abstract class Plants implements PrintPlantInfo{
 
     //Använder Polymorfism med den här klassen, resten av växterna ärver denna.
     private PlantType type;

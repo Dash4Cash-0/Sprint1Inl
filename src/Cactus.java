@@ -12,6 +12,5 @@ public class Cactus extends Plants implements PrintPlantInfo{
     public void printLiquidInfo(){
         System.out.println("This " + PlantType.CACTUS.type + " needs " +
                 mineralWaterPerDay + "cl of " + Liquids.MINERALWATER.liquidType + "/day");
-
     }
 }
