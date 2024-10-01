@@ -31,7 +31,6 @@ public class Main {
         }
         print.printCactus();
         print.printPalmTree();
-        print.printCarniPlant();
 
 
         boolean isRunning = true;
