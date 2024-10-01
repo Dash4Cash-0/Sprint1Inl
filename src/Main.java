@@ -12,6 +12,7 @@ public class Main {
 
     public Main(){
         Scanner input = new Scanner(System.in);
+        Art print = new Art();
 
         Cactus Igge = new Cactus("Igge",PlantType.CACTUS, 0.2);
         Palms Laura = new Palms("Laura",PlantType.PALM, 5);
@@ -28,6 +29,10 @@ public class Main {
         for (Plants plant : allPlants) {
             System.out.println(plant.getName() + " the " + plant.getType().type);
         }
+        print.printCactus();
+        print.printPalmTree();
+        print.printCarniPlant();
+
 
         boolean isRunning = true;
 
