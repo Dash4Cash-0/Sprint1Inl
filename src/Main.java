@@ -4,10 +4,12 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public void seePlantsInStore(List<Plants> allPlants){
+    public void seePlantsInStore(List<Plants> allPlants, Art print){
+        print.printBorder();
         for (Plants plant : allPlants) {
             System.out.println(plant.getName() + " the " + plant.getType().type);
         }
+        print.printBorder();
     }
 
     public Main(){
@@ -25,16 +27,17 @@ public class Main {
         allPlants.add(Meatloaf);
         allPlants.add(Olof);
 
+        print.printLogo();
+
         System.out.println("These are the plants in store right now\n");
+        print.printBorder();
         for (Plants plant : allPlants) {
             System.out.println(plant.getName() + " the " + plant.getType().type);
         }
-        print.printCactus();
-        print.printPalmTree();
+        print.printBorder();
 
 
         boolean isRunning = true;
-
         while (isRunning) {
 
             String userInput;
@@ -46,7 +49,7 @@ public class Main {
 
             for (Plants plant : allPlants) {
                 if (!choice.equals(plant.getName().toLowerCase())) {
-                    plantNotAvailable = "There is no plant with the name " + choice + "\n";
+                    plantNotAvailable = "There is no plant with the name " + "\"" + choice + "\"" + "\n";
                 }else{
                     plant.printLiquidInfo();
                     plantNotAvailable = "";
@@ -63,7 +66,7 @@ public class Main {
                 isRunning = false;
                 System.out.println("Exiting program...");
             } else if (userInput.equals("in store")) {
-                seePlantsInStore(allPlants);
+                seePlantsInStore(allPlants, print);
             }
         }
     }
