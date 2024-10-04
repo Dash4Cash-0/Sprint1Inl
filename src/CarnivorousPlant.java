@@ -10,6 +10,7 @@ public class CarnivorousPlant extends Plants implements PrintPlantInfo{
         this.dailyTotalProtein = this.baseProteinIntake + (0.2 * height);
     }
 
+    //Polymorphism
     @Override
     public void printLiquidInfo(){
         System.out.println("This " + PlantType.CARNIVOROUS.type

@@ -8,7 +8,7 @@ public class Palms extends Plants implements PrintPlantInfo{
         super(name, type, height);
         this.waterPerday = this.water * height;
     }
-
+    //Polymorphism
     @Override
     public void printLiquidInfo(){
         System.out.println("This " + PlantType.PALM.type + " needs "

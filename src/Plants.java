@@ -1,6 +1,6 @@
 public abstract class Plants implements PrintPlantInfo{
 
-    //Använder Polymorfism med den här klassen, resten av växterna ärver denna.
+    //Superklass
     private PlantType type;
     private double height;
     private String name;

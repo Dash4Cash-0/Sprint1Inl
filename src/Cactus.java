@@ -8,6 +8,7 @@ public class Cactus extends Plants implements PrintPlantInfo{
 
     }
 
+    //Polymorphism
     @Override
     public void printLiquidInfo(){
         System.out.println("This " + PlantType.CACTUS.type + " needs " +
